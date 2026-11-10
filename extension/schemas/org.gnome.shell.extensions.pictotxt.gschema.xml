@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.pictotxt" path="/org/gnome/shell/extensions/pictotxt/">
+    <key name="icon-name" type="s">
+      <default>''</default>
+      <summary>Top bar icon</summary>
+      <description>Icon theme name or absolute path to a *-symbolic.svg. Empty means the bundled default.</description>
+    </key>
+    <key name="show-label" type="b">
+      <default>false</default>
+      <summary>Show label</summary>
+      <description>Show a text label next to the top bar icon.</description>
+    </key>
+    <key name="label-text" type="s">
+      <default>'PictoTxt'</default>
+      <summary>Label text</summary>
+      <description>Text of the optional top bar label.</description>
+    </key>
+    <key name="open-shortcut" type="as">
+      <default>[]</default>
+      <summary>Keyboard shortcut</summary>
+      <description>Accelerator that opens PictoTxt. Empty disables the shortcut. Stored as an array because GNOME Shell keybindings require type "as".</description>
+    </key>
+    <key name="auto-copy" type="b">
+      <default>false</default>
+      <summary>Auto-copy</summary>
+      <description>Copy extracted text to the clipboard automatically.</description>
+    </key>
+    <key name="monospace" type="b">
+      <default>false</default>
+      <summary>Monospace</summary>
+      <description>Use a monospace font for the extracted text.</description>
+    </key>
+  </schema>
+</schemalist>

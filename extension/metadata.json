@@ -1,0 +1,9 @@
+{
+  "uuid": "pictotxt@example.github.io",
+  "name": "PictoTxt",
+  "description": "OCR any image from the top bar. Drop or paste an image, copy the text.",
+  "shell-version": ["45", "46", "47"],
+  "settings-schema": "org.gnome.shell.extensions.pictotxt",
+  "gettext-domain": "pictotxt",
+  "url": "https://example.github.io/pictotxt"
+}

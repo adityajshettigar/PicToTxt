@@ -1,0 +1,25 @@
+[package]
+name = "picto-txt"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.78"
+license = "MIT"
+description = "PictoTxt: drop or paste an image, get the text (OCR via ocrs)"
+
+[dependencies]
+gtk = { package = "gtk4", version = "0.9", features = ["v4_10"] }
+adw = { package = "libadwaita", version = "0.7", features = ["v1_4"] }
+ocrs = "0.12"
+rten = "0.24"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp", "bmp", "tiff", "gif"] }
+anyhow = "1"
+thiserror = "2"
+async-channel = "2"
+glib = "0.20"
+
+[profile.release]
+lto = "thin"
+opt-level = "z"
+strip = "symbols"
+codegen-units = 1
+panic = "abort"
